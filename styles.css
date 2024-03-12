@@ -1,15 +1,48 @@
+body {
+  background-color: rgb(204, 50, 50);
+}
+
+button {
+  margin: 0px 10px;
+  padding: 10px 0px;
+  background-color: rgb(175, 175, 175);
+  font-size: 20px;
+  flex: 1;
+}
+
+button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn-container {
+  width: 960px;
+  margin: auto;
+  display: flex;
+  padding: 15px 0px;
+}
+
 .container {
   width: 960px;
   height: 960px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
-  border: 3px solid palegreen;
+  border: 7px solid;
+  border-radius: 10px;
+  border-color: rgb(88, 37, 37) 
+                rgb(199, 106, 106) 
+                rgb(235, 157, 157) 
+                rgb(129, 58, 58);
 }
 
 .cell {
-  background-color: white;
+  background-color: rgb(175, 175, 175);
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .painted {
-  background-color: olivedrab;
+  background-color: rgb(22, 22, 22);
+  border: none;
 }
