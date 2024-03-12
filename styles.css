@@ -6,8 +6,12 @@
   flex-wrap: wrap;
 }
 
-.square {
+.cell {
   background-color: white;
   margin: 2px;
   box-sizing: border-box;
+}
+
+.painted {
+  background-color: olivedrab;
 }
