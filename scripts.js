@@ -1,10 +1,23 @@
 const container = document.querySelector('.container');
 const customiseBtn = document.querySelector('.customise');
 const divs = [];
-let dimensions = 16;
+const initialDimensions = 16;
+
+generateGrid(initialDimensions);
 
 customiseBtn.addEventListener('click', function(){
-  dimensions = parseInt(prompt("Enter a number from 1-100", 16));
+  let cellsInput = prompt("Enter a number from 1-100", 16);
+
+  if(cellsInput === null){
+    alert("Operation cancelled.");
+  } else {
+    cellsInput = parseInt(cellsInput);
+    if(isNaN(cellsInput) || cellsInput < 1 || cellsInput > 100){
+      alert("Invalid value, please try again.");
+    } else {
+      generateGrid(cellsInput);
+    }
+  }
 });
 
 function generateGrid(cellsPerSide){
