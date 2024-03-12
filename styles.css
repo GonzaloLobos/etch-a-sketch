@@ -1,15 +1,13 @@
 .container {
-  background-color: palegreen;
   width: 960px;
   height: 960px;
   display: flex;
   flex-wrap: wrap;
+  border: 3px solid palegreen;
 }
 
 .cell {
   background-color: white;
-  margin: 2px;
-  box-sizing: border-box;
 }
 
 .painted {
