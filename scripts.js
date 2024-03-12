@@ -1,5 +1,6 @@
 const container = document.querySelector('.container');
 const customiseBtn = document.querySelector('.customise');
+const clearBtn = document.querySelector('.clear');
 const divs = [];
 const initialDimensions = 16;
 
@@ -19,6 +20,13 @@ customiseBtn.addEventListener('click', function(){
     }
   }
 });
+
+clearBtn.addEventListener('click', function(){
+  divs.forEach((div) => {
+    div.classList.remove('painted');
+    div.classList.add('cell');
+  })
+})
 
 function generateGrid(cellsPerSide){
   divs.forEach((div) => container.removeChild(div));
